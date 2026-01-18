@@ -13,6 +13,12 @@ public class Human {
         this.age = age;
     }
 
+    public Human(Human other) {
+        this.lastname = other.lastname;
+        this.firstname = other.firstname;
+        this.age = other.age;
+    }
+
     @Override
     public String toString() {
         return "\n" + lastname + " " + firstname + " " + age;

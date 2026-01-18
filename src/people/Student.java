@@ -15,6 +15,21 @@ public class Student extends Human {
         this.rating = rating;
     }
 
+    public Student( Human human,
+                    String specialty, String group, int rating) {
+        super(human);
+        this.specialty = specialty;
+        this.group = group;
+        this.rating = rating;
+    }
+
+    public Student(Student other){
+        super(other);
+        this.specialty = other.specialty;
+        this.group = other.group;
+        this.rating = other.rating;
+    }
+
     @Override
     public String toString() {
         return  super.toString()+ " " +  specialty + " " + group + " " + rating;
