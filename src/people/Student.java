@@ -2,7 +2,7 @@ package people;
 
 public class Student extends Human {
     private String specialty, group;
-    public int rating;
+    private int rating;
 
     public Student(){
     }
